@@ -1,20 +1,13 @@
-# Entry: The World Ledger — front page of 19 Nov 2026
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/SufTTY/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/SufTTY/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
-The final make.fun competition entry: a broadsheet front page titled **'THE WORLD LEDGER'** for
-**Thursday, 19 November 2026**.
+The World Ledger front page of Thursday 19 November 2026 — a single-frame broadsheet led by a photorealistic hero photograph (the first Trump–Xi–Putin trilateral summit in Shenzhen) with a concise caption bar, lead headline, red news ticker and three secondary columns — 1024x1024 PNG under 1 MiB; `compose19.py` rebuilds it, deterministic `main.py` copies `entry.png` to `/output/entry.png`.
 
-## The page
+## Run
 
-- Photorealistic hero photograph of the first trilateral summit between Trump, Xi and Putin in
-  Shenzhen, generated via pollinations.ai through `compose19.py`.
-- Red ticker strip across the page.
-- Three secondary story columns below the lead.
+```bash
+python3 main.py
+```
 
-## Requirements
-
-- `entry.png` must be a 1024x1024 PNG under 1 MiB.
-- `main.py` copies `entry.png` to the output directory (honouring `MAKEFUN_OUTPUT_DIR`) and raises
-  `SystemExit` if the copy exceeds 1 MiB.
-- The pipeline uses the network only for the hero photo fetch; the fallback drawing is used if it
-  fails.
-- `main.py` is deterministic and makes no network calls.
+Built for the make.fun bounty https://make.fun/bounty/news-image-20261119.
