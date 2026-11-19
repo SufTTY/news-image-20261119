@@ -56,6 +56,10 @@ def flow(f, text, limit, max_lines):
     return lines
 
 
+def rule(draw, x0, y0, x1):
+    draw.rectangle([x0, y0, x1, y0 + 2], fill=RED)
+
+
 def grab_hero():
     for _ in range(3):
         try:
@@ -143,7 +147,7 @@ def compose():
     ]
     for idx, (headline, sub) in enumerate(stories):
         x0 = col_xs[idx]
-        drawer.rectangle([x0, top, x0 + col_w, top + 2], fill=RED)
+        rule(drawer, x0, top, x0 + col_w)
         size = 28
         while size > 12:
             trial_font = font(size, bold=True)
